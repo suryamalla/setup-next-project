@@ -1,0 +1,61 @@
+html,
+body {
+  @apply text-sm md:text-base text-textColor;
+  font-family: "Barlow", sans-serif !important;
+}
+html {
+    scroll-behavior: auto;
+    // @apply bg-primary-light;
+  }
+  .container {
+    @apply md:px-9;
+  }
+  .container-sm {
+    @apply max-w-[1235px];
+  }
+  
+.row {
+    @apply flex flex-wrap mx-[-15px];
+  
+    .two-col,
+    .three-col,
+    .four-col,
+    .five-col {
+      @apply px-[15px] mb-[30px];
+    }
+  
+    .two-col {
+      @apply w-full md:w-[50%];
+    }
+  
+    .three-col {
+      @apply w-full md:w-[33.33%];
+    }
+  
+    .four-col {
+      @apply w-full md:w-[50%] lg:w-[25%];
+    }
+  
+    .five-col {
+      @apply w-[50%] sm:w-[33.33%] lg:w-[20%];
+    }
+  }
+  section {
+    @apply py-10 md:py-16;
+  }
+  .dark-bg {
+    @apply bg-dark text-white;
+  
+    a {
+      @apply text-white;
+    }
+  }
+  .row {
+    .left-col {
+      @apply md:pl-11;
+    }
+  
+    .right-col {
+      @apply md:pl-10;
+    }
+  }
